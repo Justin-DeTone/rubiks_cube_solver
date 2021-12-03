@@ -36,36 +36,5 @@ class Cube(Face):
         self.yellow_face = Face("Y")
 
 
-        #MUST FIX REFERENCES
-        self.orange_face.setUp(self.white_face)
-        self.orange_face.setDown(self.blue_face)
-        self.orange_face.setLeft(self.yellow_face)
-        self.orange_face.setRight(self.green_face)
-
-        self.green_face.setUp(self.white_face)
-        self.green_face.setDown(self.blue_face)
-        self.green_face.setLeft(self.orange_face)
-        self.green_face.setRight(self.red_face)
-
-        self.red_face.setUp(self.white_face)
-        self.red_face.setDown(self.blue_face)
-        self.red_face.setLeft(self.green_face)
-        self.red_face.setRight(self.yellow_face)
-
-        self.yellow_face.setUp(self.white_face)
-        self.yellow_face.setDown(self.blue_face)
-        self.yellow_face.setLeft(self.red_face)
-        self.yellow_face.setRight(self.orange_face)
-
-        self.white_face.setUp(self.orange_face)
-        self.white_face.setDown(self.red_face)
-        self.white_face.setLeft(self.green_face)
-        self.white_face.setRight(self.yellow_face)
-
-        self.blue_face.setUp(self.red_face)
-        self.blue_face.setDown(self.orange_face)
-        self.blue_face.setLeft(self.green_face)
-        self.blue_face.setRight(self.yellow_face)
-
 test_face = Face("G")
 test_face.display()
